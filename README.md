@@ -1,2 +1,2 @@
-# Conceptos-de-Bases-de-Datos
-Some exercise solutions from the subject "Database Concepts" (UNLP)
+# Conceptos-de-Bases-de-Datos 💻🌳🧮📚
+Resolución de algunos ejercicios de la materia. Su equivalente en licenciaturas y analista es "Fundamentos de Organización de Datos" (FOD)
