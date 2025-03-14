@@ -13,17 +13,17 @@
     nombre:letra;
     arch:archivo;
  BEGIN
-    println("Ingrese el nombre del archivo:");
-    read(nombre);
+    writeln('Ingrese el nombre del archivo:');
+    readln(nombre);
     assign(arch,nombre);
     rewrite(arch);
-    println("Ingrese un material:");
-    read(material);
+    writeln('Ingrese un material:');
+    readln(material);
     while(material<>"cemento")do
     begin
         write(arch,material);
-        println("Ingrese un material:");
-        read(material);
+        writeln('Ingrese un material:');
+        readln(material);
     end;
     close(arch);
  END.
