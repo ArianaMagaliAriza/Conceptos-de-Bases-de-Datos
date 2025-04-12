@@ -7,7 +7,8 @@ program p1e3;
 type
     texto=string[25];
 var
-
+  arch:texto;
 BEGIN
+  writeln();
 
 END.
