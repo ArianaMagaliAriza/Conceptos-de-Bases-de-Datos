@@ -4,11 +4,22 @@
   La carga finaliza al procesar el nombre ‘zzz’ que no debe incorporarse al archivo.}
 
 program p1e3;
+const
+    valor_alto='zzz';
 type
-    texto=string[25];
+    cadena=string[25];
 var
-  arch:texto;
+  arch:text;
+  cad:cadena;
 BEGIN
-  writeln();
-
+  assign(arch,'dinos.txt');
+  rewrite(arch);
+  writeln('Ingrese un tipo de dinosaurio que habito en sudamerica:');
+  readln(cad);
+  while(cad <> valor_alto)do begin
+    writeln(arch,cad);
+    writeln('Ingrese un tipo de dinosaurio que habito en sudamerica:');
+    readln(cad);
+  end;
+  close(arch);
 END.

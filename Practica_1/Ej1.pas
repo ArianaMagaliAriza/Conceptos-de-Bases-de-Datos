@@ -6,12 +6,11 @@
 
  program p1e1;
  type
-    letra=string[25];
-    archivo= file of letra;
+    texto=string[25];
  var
-    material:letra;
-    nombre:letra;
-    arch:archivo;
+    material:texto;
+    nombre:texto;
+    arch:text;
  BEGIN
     writeln('Ingrese el nombre del archivo:');
     readln(nombre);
@@ -19,11 +18,12 @@
     rewrite(arch);
     writeln('Ingrese un material:');
     readln(material);
-    while(material<>"cemento")do
+    while(material <> 'cemento')do
     begin
-        write(arch,material);
+        writeln(arch,material);
         writeln('Ingrese un material:');
         readln(material);
     end;
+    if(material = 'cemento') do writeln(arch,material);
     close(arch);
  END.
